@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --color-base: #030303;
+  --color-emerald: #10b981;
+  --color-gold: #f59e0b;
+}
+
+@theme inline {
+  --color-base: #030303;
+  --color-emerald: #10b981;
+  --color-gold: #f59e0b;
+  --font-sans: var(--font-geist), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), monospace;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 10px rgba(16, 185, 129, 0.3); }
+  50% { box-shadow: 0 0 25px rgba(16, 185, 129, 0.6); }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.animate-twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.scrollbar-emerald::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-emerald::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+.scrollbar-emerald::-webkit-scrollbar-thumb {
+  background: #10b981;
+  border-radius: 3px;
+}
+
+.scrollbar-emerald::-webkit-scrollbar-thumb:hover {
+  background: #34d399;
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.3);
+  color: #10b981;
+}
+
+html {
+  scroll-behavior: smooth;
+}
