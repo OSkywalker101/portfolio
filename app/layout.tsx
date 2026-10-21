@@ -15,6 +15,9 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Oliver Jude | Cyber-Jedi Portfolio",
   description: "AI Engineer • Full Stack Developer • Researcher",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
