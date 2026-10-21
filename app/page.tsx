@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Arsenal from "@/components/Arsenal";
 import Projects from "@/components/Projects";
+import Uplink from "@/components/Uplink";
 import Achievements from "@/components/Achievements";
 import Footer from "@/components/Footer";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Arsenal />
       <Projects />
+      <Uplink />
       <Achievements />
       <Footer />
     </main>
